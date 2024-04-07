@@ -1,7 +1,7 @@
 export const DEFAULT_LANGUAGE = "English";
 export const DEFAULT_LOCALE = "en";
 export const DEFAULT_TIMEOUT = 60;
-export const DOMAIN = "numlingo.adaptable.app";
+export const DOMAIN = "numlingo.onrender.com";
 export const WS_CLOSE_ERROR_CODES = [
   1002, // CLOSE_PROTOCOL_ERROR
   1005, // CLOSE_NO_STATUS

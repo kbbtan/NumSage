@@ -79,12 +79,12 @@ const Game = () => {
         gameRoom?.send("end");
         clearInterval(id);
         setIsTiming(false);
-        setSeconds(seconds);
+        setSeconds(DEFAULT_TIMEOUT);
         updatePlayerScores((prev) => {
           return Object.fromEntries(Object.keys(prev).map((key) => [key, 0]));
         });
         setIsCompleted(true);
-      }, seconds * 1000);
+      }, DEFAULT_TIMEOUT * 1000);
 
       gameRoom?.send("start");
     }
